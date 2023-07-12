@@ -1,26 +1,17 @@
-## Vision Transformers for Dense Prediction
+##Depth Estimation using DNN Architecture and Vision-Based Transformers
 
-This repository contains code and models for our [paper](https://arxiv.org/abs/2103.13413):
+This repository contains code and models for our [paper](https://www.researchgate.net/publication/371233086_Depth_Estimation_using_DNN_Architecture_and_Vision-Based_Transformers):
 
-> Vision Transformers for Dense Prediction  
-> René Ranftl, Alexey Bochkovskiy, Vladlen Koltun
-
-
-### Changelog 
-* [March 2021] Initial release of inference code and models
+> Depth Estimation using DNN Architecture and Vision-Based Transformers
 
 ### Setup 
 
-1) Download the model weights and place them in the `weights` folder:
-
-
+1) Download the model weights and place them in the `weights`  create the folder if it's not there in the code folder:
+   
 Monodepth:
 - [dpt_hybrid-midas-501f0c75.pt](https://github.com/intel-isl/DPT/releases/download/1_0/dpt_hybrid-midas-501f0c75.pt), [Mirror](https://drive.google.com/file/d/1dgcJEYYw1F8qirXhZxgNK8dWWz_8gZBD/view?usp=sharing)
 - [dpt_large-midas-2f21e586.pt](https://github.com/intel-isl/DPT/releases/download/1_0/dpt_large-midas-2f21e586.pt), [Mirror](https://drive.google.com/file/d/1vnuhoMc6caF-buQQ4hK0CeiMk9SjwB-G/view?usp=sharing)
 
-Segmentation:
- - [dpt_hybrid-ade20k-53898607.pt](https://github.com/intel-isl/DPT/releases/download/1_0/dpt_hybrid-ade20k-53898607.pt), [Mirror](https://drive.google.com/file/d/1zKIAMbltJ3kpGLMh6wjsq65_k5XQ7_9m/view?usp=sharing)
- - [dpt_large-ade20k-b12dca68.pt](https://github.com/intel-isl/DPT/releases/download/1_0/dpt_large-ade20k-b12dca68.pt), [Mirror](https://drive.google.com/file/d/1foDpUM7CdS8Zl6GPdkrJaAOjskb7hHe-/view?usp=sharing)
   
 2) Set up dependencies: 
 
@@ -39,16 +30,7 @@ Segmentation:
     ```shell
     python run_monodepth.py
     ```
-
-    Or run a semantic segmentation model:
-
-    ```shell
-    python run_segmentation.py
-    ```
-
 3) The results are written to the folder `output_monodepth` and `output_semseg`, respectively.
-
-Use the flag `-t` to switch between different models. Possible options are `dpt_hybrid` (default) and `dpt_large`.
 
 
 **Additional models:**
@@ -71,22 +53,16 @@ Hints on how to evaluate monodepth models can be found here: https://github.com/
 
 Please cite our papers if you use this code or any of the models. 
 ```
-@article{Ranftl2021,
-	author    = {Ren\'{e} Ranftl and Alexey Bochkovskiy and Vladlen Koltun},
-	title     = {Vision Transformers for Dense Prediction},
-	journal   = {ArXiv preprint},
-	year      = {2021},
+@article{article,
+author = {Kulkarni, Uday and Devagiri, Shreya and Devaranavadagi, Rohit and Pamali, Sneha and Negalli, Nishanth and Prabakaran, V.},
+year = {2023},
+month = {06},
+pages = {02010},
+title = {Depth Estimation using DNN Architecture and Vision-Based Transformers},
+volume = {53},
+journal = {ITM Web of Conferences},
+doi = {10.1051/itmconf/20235302010}
 }
-```
-
-```
-@article{Ranftl2020,
-	author    = {Ren\'{e} Ranftl and Katrin Lasinger and David Hafner and Konrad Schindler and Vladlen Koltun},
-	title     = {Towards Robust Monocular Depth Estimation: Mixing Datasets for Zero-shot Cross-dataset Transfer},
-	journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
-	year      = {2020},
-}
-```
 
 ### Acknowledgements
 
