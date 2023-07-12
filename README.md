@@ -1,4 +1,4 @@
-##Depth Estimation using DNN Architecture and Vision-Based Transformers
+## Depth Estimation using DNN Architecture and Vision-Based Transformers
 
 This repository contains code and models for our [paper](https://www.researchgate.net/publication/371233086_Depth_Estimation_using_DNN_Architecture_and_Vision-Based_Transformers):
 
